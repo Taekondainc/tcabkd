@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "responses",
+  "info": {
+    "name": "responses"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "response": {
+      "type": "text"
+    },
+    "faq": {
+      "model": "faq",
+      "via": "response"
+    }
+  }
+}
